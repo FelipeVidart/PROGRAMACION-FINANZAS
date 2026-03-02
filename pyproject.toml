@@ -1,0 +1,24 @@
+[project]
+name = "felo-finance"
+version = "0.1.0"
+description = "Felo - Programación en Finanzas"
+requires-python = ">=3.11"
+dependencies = []
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["felo_finance*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+  "integration: tests that require network/external providers"
+]
+addopts = "-m 'not integration'"

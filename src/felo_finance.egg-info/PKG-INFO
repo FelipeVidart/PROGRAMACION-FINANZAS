@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: felo-finance
+Version: 0.1.0
+Summary: Felo - Programación en Finanzas
+Requires-Python: >=3.11
